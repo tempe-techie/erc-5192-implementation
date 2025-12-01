@@ -8,7 +8,7 @@ import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
  * @title ExampleSbt
  * @notice ExampleSbt is a simple ERC5192 contract where the tokens are locked by default.
  * @notice Only the owner can mint and burn tokens.
- * @dev This contract is used to demonstrate the functionality of the ERC5192 contract.
+ * @dev This contract is used to demonstrate the functionality of the ERC5192 standard.
  */
 contract ExampleSbt is ERC5192, Ownable {
   uint256 public counter = 1;
