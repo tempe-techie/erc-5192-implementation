@@ -15,8 +15,8 @@ describe("ExampleSbt tests", function () {
   const symbol = "ESBT";
 
   const calculateGasCosts = (testName: string, receipt: any) => {
-    const ethPrice = 4000; // price in USD for calculating gas costs
-    const ethGwei = 5;
+    const ethPrice = 2700; // price in USD for calculating gas costs
+    const ethGwei = 0.1;
     const gasCostEthereum = ethers.formatUnits(
       String(Number(ethers.parseUnits(String(ethGwei), "gwei")) * Number(receipt.gasUsed)),
       "ether"
